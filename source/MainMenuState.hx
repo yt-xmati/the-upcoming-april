@@ -28,7 +28,9 @@ class MainMenuState extends MusicBeatState
 	public static var psychEngineVersion:String = 'None'; //This is also used for Discord RPC
 	public static var adopted:String = 'yes'; //This is also used for Discord RPC
 	public static var familyVersion:String = 'motherless and fatherless'; //This is also used for Discord RPC
-	public static var bitcesh:String = 'None'; //This is also used for Discord RPC
+	public static var bitches:String = 'None'; //This is also used for Discord RPC
+	public static var ratiod:String = 'ratiod 100mil+ times LLLL'; //This is also used for Discord RPC
+	public static var milk:String = '0%'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -128,11 +130,11 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, ClientPrefs.getResolution()[1] - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
+		var versionShit:FlxText = new FlxText(12, ClientPrefs.getResolution()[1] - 24, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, ClientPrefs.getResolution()[1] - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
+		var versionShit:FlxText = new FlxText(12, ClientPrefs.getResolution()[1] - 44, 0, "Adopted: " + adopted, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
